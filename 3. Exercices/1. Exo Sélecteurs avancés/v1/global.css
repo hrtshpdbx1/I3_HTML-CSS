@@ -1,0 +1,99 @@
+/* <!-- sans id ni classe, uniquement avec les sélecteurs avancés vus :
+✅ Coin supérieur gauche n'a pas de bordure 
+✅ Ligne tout en haut d'une couleur différente
+✅ 1ère case de chaque ligne : le texte est plus gros et la couleur plus foncée
+✅ 1 ligne sur 2 d'une couleur différente (image jaune)
+✅Si case vide -> fond gris
+6. Bonus : les boutons appeler et envoyer mail seront présents dans chaque dernière cases mais on les cache si les cases tel et/ou email sont vides --> */
+
+
+
+* {   
+   
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+table, th, td {   /* selectionne tout le tableau; les table headers, data cell   */
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+caption{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+td {
+padding: 10px;   
+margin: 10px;
+}
+
+
+th { /* selectionne les table header  */
+     background-color :blue;
+     color:white
+}
+
+/* tr th ---> les th qui sont dans le tr */ 
+/* tr:first-child  */
+th:first-of-type
+{
+    border: 1px solid white; /* border:none ne fonctionne pas*/
+    background-color : white
+}
+
+/* 1ère case de chaque ligne : le texte est plus gros et la couleur plus foncée */
+
+tr td:first-child
+/* les première data cell de table row */
+{
+  background-color:darkblue;
+  color: white;
+   font-size: 1.3rem;
+}
+
+/* 1 ligne sur 2 d'une couleur différente */
+/* Cibler tous les élements impairs parmi table row */
+tr:nth-of-type(odd){
+    background-color : lightblue;
+}
+
+/* Si case vide -> fond gris ????? */
+td:empty {
+    background-color: lightgray;
+}
+
+/* Les boutons appeler et envoyer mail seront présents dans chaque dernière cases mais on les cache si les cases tel et/ou email sont vides */
+
+/* TH  / NA
+Ligne 1 / ok
+
+Ligne 2 / pas de tel = 
+--> td 5 empty - button de td  6 hidden
+
+Ligne 3 / pas d'e-mail  
+--> td 4 empty - 1er button de td  6  hidden
+
+Ligne 4 / pas de tel ni d'e-mail 
+->td 4 et 5 empty - 1er et 2eme  button de td  6  hidden */
+
+/* A:nth-of-type(Xn+Y)
+→ sélectionne, parmi tous les éléments A présents dans le parent, les éléments A qui
+correspondent au motif Xn+Y.*/
+
+/* td:empty :nth-of-type(5n+1) button
+{
+    visibility: hidden;;
+}  */
+
+/* Cibler tous les élements empty parmi les éléments du type précisé */
+table td:nth-of-type(empty){
+    background-color: blueviolet;
+}
+
+/* ? Voisins */
+/* Tous les inputs qui se trouvent après un label (même lignée) */

@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100lvh;
+    /* 100lvw : 100% de la view width */
+    /* 100lvh : 100% de la view height */
+    ;
+}
+
+.container1 {
+    width: 800px;
+    height: 300px;
+    background-color: lightpink;
+    /* active le diplay-flex*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /*permet le passage a la ligne si les éléments débordent */
+    align-content: start;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: center;
+    /*comment les lignes/collones générées par le wraps vont se comporter */
+
+
+
+    /* 
+Choisir espacement entre les éléments
+} */
+
+    gap: 2rem
+}
+
+.elem {
+    background-image: url("petitchat.jpg");
+    background-position: center;
+    padding: 0.5rem;
+    width: 150px;
+    /*la largeur doit fit le contenu padding inclus*/
+    border: 2px solid rgb(236, 5, 217);
+    border-radius: 50px;
+   height:150px; 
+    flex-shrink: 0;
+    /* element n'est pas rétrécissable */
+    color: beige;
+
+}
+
+ .elem:nth-child(2)
+
+{
+ order:-1
+}
+
+
+/* .elem:nth-child(2) {
+font-size: 2.9rem;
+Si wrap n'est pas activé, vous pouvez préciser une autre regle pour l'alignement secondaire 
+} */ 

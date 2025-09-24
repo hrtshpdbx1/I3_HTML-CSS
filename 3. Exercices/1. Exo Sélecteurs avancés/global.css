@@ -1,0 +1,133 @@
+/* <!-- sans id ni classe, uniquement avec les sélecteurs avancés vus :
+✅ Coin supérieur gauche n'a pas de bordure 
+✅ Ligne tout en haut d'une couleur différente
+✅ 1ère case de chaque ligne : le texte est plus gros et la couleur plus foncée
+✅ 1 ligne sur 2 d'une couleur différente (image jaune)
+✅Si case vide -> fond gris
+6. Bonus : les boutons appeler et envoyer mail seront présents dans chaque dernière cases mais on les cache si les cases tel et/ou email sont vides --> */
+
+
+
+* {
+
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.theoffice {
+    max-width: 300px;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+table,
+th,
+td {
+    /* selectionne tout le tableau; les table headers, data cell   */
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+caption {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+td {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+thead th {
+    /* selectionne les table header dans thead */
+    background-color: blue;
+    color: white
+}
+
+tbody th tbody tr th:first-child
+
+/* les première data cell de table row */
+    {
+    font-size: 1.3rem;
+    color: white;
+}
+
+tbody tr:nth-of-type(odd) th:first-child {
+
+    background-color: rgb(76, 129, 131)
+}
+
+tbody tr:nth-of-type(even) th:first-child {
+    background-color: rgb(130, 163, 174);
+}
+
+/* selectionne le premier th dans thead*/
+thead th:first-of-type {
+    border: 1px solid white;
+    /* border:none ne fonctionne pas*/
+    background-color: white
+}
+
+
+
+/* 1 ligne sur 2 d'une couleur différente */
+/* Cibler tous les élements impairs parmi table row */
+tr:nth-of-type(odd) {
+    background-color: lightblue;
+}
+
+/* 1 ligne sur 2 d'une couleur différente */
+/* Cibler tous les élements impairs parmi table row */
+tr:nth-of-type(odd) {
+    background-color: lightblue;
+}
+
+/* Si case vide -> fond gris ????? */
+td:empty {
+    background-color: lightgray;
+}
+
+/* Les boutons appeler et envoyer mail seront présents dans chaque dernière cases mais on les cache si les cases tel et/ou email sont vides */
+
+
+/** cacher le 2e bouton si l'email est vide 
+Pseudo code --> POUR CHAQUE ligne (tr) dans le tbody
+    SI la 4ᵉ cellule (td) de cette ligne est vide
+    ALORS aller dans la dernière cellule (td) de cette ligne
+    ET masquer le dernier bouton à l’intérieur
+
+
+- tbody tr => chaque row du tbody
+- :has(td:nth-of-type(4):empty) =>  les lignes qui ont leur 4e <td> vide (= colonne email)
+- td:last-child  =>  dernière cellule de la même ligne
+- button:last-of-type =>  dernier bouton de la cellule
+*/
+tbody tr:has(td:nth-of-type(4):empty) td:last-child button:last-of-type {
+    visibility: hidden;
+}
+
+
+/** cacher le 1er bouton si tel est vide 
+--> POUR CHAQUE ligne (tr) dans le tbody
+    SI la 5ᵉ cellule (td) de cette ligne est vide
+        ALORS aller dans la dernière cellule (td) de cette ligne
+        ET masquer le premier bouton à l’intérieur
+FIN
+- tbody tr => idem
+- :has(td:nth-of-type(5):empty) => les lignes qui ont leur 5e <td> vide (= colonne tel)
+- td:last-child =>  dernière cellule de la même ligne
+- button:first-of-type  =>  premier bouton de la cellule
+*/
+tbody tr:has(td:nth-of-type(5):empty) td:last-child button:first-of-type {
+    visibility: hidden;
+}

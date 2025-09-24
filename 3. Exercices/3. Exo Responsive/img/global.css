@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-undertoned : #592720;
+    --color-vivid  : #F2542D;
+    --color-light  : #F5DFBB;
+     --color-medium  : #0E9594;
+    --color-caribbean_dark  : #127475;
+
+
+    /* Cible la préférence du navigateur */
+    @media (prefers-color-scheme: dark) {
+        --color-light : #127475;
+        --color-medium : #0E9594;
+        --color-dark : #F5DFBB;
+    }
+}
+
+
+/**----------------- Font ----------------- **/
+
+
+@font-face {
+    font-family: "Manifont Grotesk";
+    src:
+        local("PicNic"),
+        url("./font/BBBManifontGrotesk-Book.otf") format("opentype") tech(color-COLRv1),
+
+}
+
+@font-face {
+    font-family: "Gertrude";
+    src:
+        local("Gertrude"),
+        url("./font/Enby_Gertrude_roman.otf") format("opentype") tech(color-COLRv1),
+
+}
+
+@font-face {
+    font-family: "Homoneta Regular";
+    src:
+        local("Gertrude"),
+        url("./font/Homoneta-Regular.otf") format("opentype") tech(color-COLRv1),
+
+}
+
+

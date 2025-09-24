@@ -1,0 +1,80 @@
+NOMS
+--------------------------
+
+Dynameuf
+Watt the 
+ÉlectroRide
+Élec&Ride
+Élecycle 
+L'Artisane Électrique
+
+TEXTE 
+---------------------------------------
+VéloVolt - Site Web
+
+Texte Intro
+En tant qu'électricienne indépendante, je vous accompagne dans tous vos projets électriques avec un service sur-mesure et une expertise reconnue. Ma particularité ? Me déplacer exclusivement à vélo cargo électrique pour intervenir rapidement dans toute la région bruxelloise.
+Cette approche écoresponsable me permet non seulement d'éviter les embouteillages et les problèmes de stationnement, mais aussi de vous proposer des tarifs plus avantageux en réduisant mes frais de déplacement. Votre projet électrique bénéficie ainsi d'une démarche durable et économique de A à Z.
+Forte de mon expérience en électricité générale et spécialisée, je m'engage à vous offrir un travail soigné, une communication claire et le respect scrupuleux des normes de sécurité européennes et du RGIE.
+
+L'électricité en mouvement durable
+Une approche innovante qui bénéficie à la fois à l'environnement et à votre budget
+🌱 Impact zéro carbone
+Déplacements 100% électriques grâce au vélo cargo, pour une empreinte environnementale neutre
+⚡ Réactivité urbaine
+Navigation optimisée dans Bruxelles, sans contraintes de circulation ni de stationnement
+💰 Économies garanties
+Frais de déplacement minimisés, répercutés directement sur vos factures
+🚴‍♀️ Accessibilité maximale
+Intervention possible dans les zones piétonnes et espaces restreints
+
+Services
+Installation & Rénovation électrique
+Prise en charge complète de vos installations et rénovations électriques. Que vous souhaitiez équiper un nouveau projet ou rénover une acquisition récente, je vous garantis des solutions fiables et sécurisées. Câblage, tableaux électriques, éclairage, prises et interrupteurs : tout selon les normes en vigueur.
+Devis gratuit
+Mise aux normes RGIE
+La mise en conformité électrique est exigée par le RGIE pour garantir la sécurité de vos installations. Obligatoire en Belgique pour les constructions postérieures à octobre 1981 et lors de la vente pour les constructions antérieures. Je vérifie et remets aux normes votre installation pour obtenir le certificat de conformité valable 25 ans.
+Devis gratuit
+Dépannage express
+Détection rapide de l'origine des pannes électriques et réparation immédiate dans la plupart des cas. Si l'intervention nécessite des travaux plus conséquents, je vous remets un devis détaillé gratuit précisant le matériel, la main d'œuvre et les frais. Je privilégie toujours les solutions les plus adaptées et les plus économiques.
+Intervention d'urgence
+Éclairage LED écologique
+Conseils personnalisés et installation de solutions d'éclairage LED haute performance pour optimiser significativement votre consommation énergétique tout en améliorant votre confort lumineux.
+Domotique moderne
+Installation et configuration de systèmes domotiques dernière génération pour transformer votre habitat en espace intelligent et connecté, avec contrôle à distance de vos équipements.
+Parlophonie & Vidéophonie
+Installation de systèmes de communication modernes pour sécuriser et faciliter l'accès à votre domicile ou à vos locaux professionnels. Solutions adaptées aux immeubles et maisons individuelles.
+
+Footer
+Élec&Ride
+Électricienne indépendante écoresponsable se déplaçant à vélo cargo électrique dans toute la région bruxelloise.
+🚴‍♀️ Mobile • 🌱 Durable • ⚡ Experte
+Mes services
+
+Installation électrique complète
+Dépannage express 24h/7j
+Mise en conformité RGIE
+Éclairage LED économique
+Domotique intelligente
+Parlophonie & Vidéophonie
+
+Contact
+info@elecandride.be
+📍 Zone d'intervention : Région bruxelloise
+🚲 Déplacements 100% électriques
+📱 Devis gratuits en ligne
+
+
+PALETTE 
+------------------------
+
+https://uicolors.app/generate/f2542d
+
+https://coolors.co/palette/562c2c-f2542d-f5dfbb-0e9594-127475
+
+Warm Earth Tones 
+F2542D Caput mortuum
+F2542D Flamingo 
+F5DFBB Wheat 
+0E9594 Dark cyan
+127475 Caribbean Current
