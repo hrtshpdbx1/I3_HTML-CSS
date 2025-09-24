@@ -6,7 +6,7 @@
 
 :root {
     --color-undertoned: #592720;
-    --color-vivid: #F2542D;
+     --color-vivid: #d3573d; /* old #F2542D; */
     --color-light: #F5DFBB;
     --color-medium: #0E9594;
     --color-dark: #127475;
@@ -85,7 +85,7 @@ header {
     padding: 2%;
 
     /* Media queries */
-    @media (max-width : 640px) {
+    @media (max-width: 640px) {
         background-color: rgb(193, 255, 24);
 
     }
@@ -121,36 +121,35 @@ main {
     flex-direction: column;
 }
 
-     <!--  ------------------ Bannière ---------------------->
+     /**------------------ Bannière --------------------- */
 
 .containerBanner {
  
     /* border: 2px solid #622df2; */
-    display: flex;
+      display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* min-height: 60vh; */
-  
+    min-height: 40vh; 
 }
 
-      <!--  ------------------ Description ---------------------->
-.containerDescription
+      /** --------------- Description ----------------------*/
+      /* Conteneur des cards textes et illustration */
 
-/* Conteneur des cards textes et illustration */
+.containerDescription
     {
-    background-color: var(--color-dark);
+    background-color: #faeddc;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     gap: 2rem;
     padding: 3rem;
     min-height: 20vh;
     box-sizing: border-box;
 
-    @media (max-width : 640px) {
+
+    @media (max-width: 640px) {
         display: flex;
         flex-direction: column;
         padding: 1rem;
@@ -158,6 +157,26 @@ main {
     }
 }
 
+.containerDescription h1 {
+color: var(--color-vivid);
+font-size: 5rem;
+font-weight: bold;
+}
+
+.containerDescription h2 {
+color:var(--color-dark);
+font-size: 4rem;
+}
+
+.containerDescription p {
+color:var(--color-dark)
+}
+
+button {
+    border-radius: 20px;
+    background-color: var(--color-medium);
+    padding: 1%;
+}
 
 .cardTxt
 
@@ -168,30 +187,28 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border: 2px solid #622df2;
+    /* border: 2px solid #622df2; */
     font-size: 2rem;
 
     /* Media queries */
-    @media (max-width : 640px) {
+    @media (max-width: 640px) {
         max-width: 80%;
         
 
     }
 }
 
-.cardImg
-
 /* Conteneur de l'illustration */
+.cardImg
     {
     flex: 1;
-    max-width: 45%;
+    max-width: 35%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 2px solid #622df2;
-    /* Centre l'image dans son conteneur */
-
-
+    background-color: #f3dcbd;
+    border-radius: 20px;
+    /* border: 2px solid #622df2; */
 
 }
 
@@ -201,7 +218,7 @@ main {
     object-fit: contain;
  
 
-    @media (max-width : 640px) {
+    @media (max-width: 640px) {
         width: 100%;
         aspect-ratio: 1/1;
 
