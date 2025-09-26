@@ -6,8 +6,10 @@
 
 :root {
     --color-undertoned: #592720;
-     --color-vivid: #d3573d; /* old #F2542D; */
+    --color-vivid: #d3573d;
+    /* old #F2542D; */
     --color-light: #F5DFBB;
+    /*#f3dcbd; */
     --color-medium: #0E9594;
     --color-dark: #127475;
 
@@ -77,16 +79,24 @@ h2 {
 /**----------------- HEADER ----------------- **/
 
 header {
-    background-color: var(--color-medium);
+    background-color: var(--color-dark);
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
     justify-content: space-between;
     align-items: center;
-    padding: 2%;
+    padding: 1.5rem 2%;
+    min-height: 8vh;
+    max-height: 15vh;
 
-    /* Media queries */
+    /* tablette  */
+
+
+    /* Mobile  */
     @media (max-width: 640px) {
         background-color: rgb(193, 255, 24);
+        min-height: 8vh;
+        padding: 1rem 4%;
 
     }
 
@@ -96,13 +106,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-  
+    width: 400px;
+
+
 }
 
 .s_Logo img {
-      min-height: 80px;
-    width: auto;
-    ratio : 1/1;
+    width: 100%;
+    height: auto;
+    /* Laissez height en auto */
+    object-fit: contain;
+    /* (ou cover?) Pour éviter la déformation */
 
 }
 
@@ -111,9 +125,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 1.5rem;
-   color: var(--color-light);
-    font-size:2rem 
+    gap: 3rem;
+    color: var(--color-light);
+    font-size: 2rem;
+    margin-right: 10%
 }
 
 /**----------------- MAIN  ----------------- **/
@@ -124,22 +139,22 @@ header {
 
 
 main {
-    flex-grow: 1;
+    flex-grow: 3;
     width: 100vw;
-     display: flex;
+    display: flex;
     flex-direction: column;
 }
 
-     /**------------------ Bannière --------------------- */
+/**------------------ Bannière --------------------- */
 
 .containerBanner {
- 
+
     /* border: 2px solid #622df2; */
-      display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 40vh; 
+    min-height: 40vh;
 }
 
 .containerBanner img {
@@ -147,17 +162,16 @@ main {
 }
 
 
-      /** --------------- Description ----------------------*/
-      /* Conteneur des cards textes et illustration */
+/** --------------- Description ----------------------*/
+/* Conteneur des cards textes et illustration */
 
-.containerDescription
-    {
+.containerDescription {
     background-color: #faeddc;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 5rem;
     padding: 3rem;
     min-height: 20vh;
     box-sizing: border-box;
@@ -172,18 +186,18 @@ main {
 }
 
 .containerDescription h1 {
-color: var(--color-vivid);
-font-size: 6rem;
-font-weight: bolder;
+    color: var(--color-vivid);
+    font-size: 6rem;
+    font-weight: bolder;
 }
 
 .containerDescription h2 {
-color:var(--color-dark);
-font-size: 4rem;
+    color: var(--color-dark);
+    font-size: 4rem;
 }
 
 .containerDescription p {
-color:var(--color-dark)
+    color: var(--color-dark)
 }
 
 button {
@@ -195,11 +209,9 @@ button {
     color: white;
     font-size: 2rem;
     width: 50%;
-   margin-left: 20%;
-   margin-right:20%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
-
-
 
 .cardTxt
 
@@ -209,36 +221,37 @@ button {
     max-width: 45%;
     display: flex;
     flex-direction: column;
-    gap:2rem;
-    /* border: 2px solid #622df2; */
+    gap: 2rem;
+    padding: 2%;
+    border: 2px solid #622df2;
     font-size: 2rem;
+
     /* Media queries */
     @media (max-width: 640px) {
         max-width: 80%;
-        
+
 
     }
 }
 
 /* Conteneur de l'illustration */
-.cardImg
-    {
+.cardImg {
     flex: 1;
-    max-width: 35%;
+    max-width: 30%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #f3dcbd;
+    background-color: var(--color-light);
     border-radius: 20px;
     /* border: 2px solid #622df2; */
 
 }
 
 .cardImg_illustation {
-    width: 100%;
+    
     aspect-ratio: 4/3;
     object-fit: contain;
- 
+
 
     @media (max-width: 640px) {
         width: 100%;
@@ -248,20 +261,58 @@ button {
 
 }
 
+/* 
+/**----------------- SERVICE  ----------------- **/
+
+.containerCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+    gap:1rem;
+    width: 100vw;
+    
+
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 20%;
+    height: auto;
+   aspect-ratio: 3/4;
+   background-color: var(--color-vivid);
+  
+}
+
+.cardTxt_serv {
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cardImg_serv img{
+    max-width: 40%;
+    object-fit: cover}
+
 /**----------------- FOOTER ----------------- **/
 footer {
-
+    min-height: 6vh;
+    max-height: 12vh;
     background-color: var(--color-vivid);
     padding: 1rem 0;
     text-align: center;
     display: flex;
     flex-direction: row;
+    /* flex-grow: 1; */
     align-items: baseline;
     justify-content: space-between;
     color: var(--color-light);
     font-size: 1.5rem;
-   
-    /* flex-grow: 1; */
+
+
 }
 
 .containerCopyright {
